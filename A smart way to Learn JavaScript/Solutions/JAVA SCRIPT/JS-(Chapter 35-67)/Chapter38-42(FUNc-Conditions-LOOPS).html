@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width" , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+    <div>
+        <p>1. Write a custom function power ( a, b ), to calculate the value of a raised to b.</p>
+        <button id="powerCalculator" onclick="power()"> to calculate power click here</button>
+        <br />
+        <p>Result </p> <input type="text" id="result"><br>
+    </div>
+    <div>
+        <p> 2. Any year is entered through the keyboard. Write a function to determine whether the year is a leap year
+            or not. Leap years ..., 2012, 2016, 2020, …</p>
+        <Label>enter year </Label>
+        <input type="text" id="year">
+        <button id="years" onclick="leapyear()"> check </button>
+    </div>
+    <div>
+        <p> 3. If the lengths of the sides of a triangle are denoted by a, b, and c, then area of triangle is given by
+            area = S(S − a)(S − b)(S − c) where, S = ( a + b + c ) / 2 </p>
+        <label id="a">enter value of a </label>
+        <input type="text" id="side_a"> <br>
+        <label id="b">enter value of b </label>
+        <input type="text" id="side_b"> <br>
+        <label id="c">enter value of c </label>
+        <input type="text" id="side_c"><br>
+        <button id="Areea" onclick="calculateArea()">CHECK</button>
+        <p>Result </p> <input type="text" id="AreaResult"><br>
+
+    </div>
+    <div>
+        <p> 4. Write a function that receives marks received by a student in 3 subjects and returns the average and
+            percentage of these marks. there should be 3 functions one is the mainFunction and other are for average and
+            percentage. Call those functions from mainFunction and display result in mainFunction. </p>
+        <table border="1px"> 
+            <tr>
+                <td> <label id="m1">enter marks of subject 1 </label>
+                    <input type="text" id="s1"> <br>
+                </td>
+
+                <td> <label id="m2">enter marks of subject 2 </label>
+                    <input type="text" id="s2"> <br>
+                </td>
+                <td> <label id="m3">enter marks of subject 3 </label>
+                    <input type="text" id="s3"><br>
+                </td>
+                <td>
+                    <label id="m4">enter Total marks</label>
+                    <input type="text" id="total"><br>
+                </td>
+        </table>
+        <button onclick="avg()" > check result</button>
+     
+
+        <div  class="hide" id="hiddendiv" >
+           
+            <label for="">average</label>
+            <input  id="average" type="hidden" ><br>
+           
+            <label for="" visible="false" > percentage</label>
+            <input  id="percentage" type="hidden" > %<br>
+
+        </div>
+    </div>
+<div>
+    <p>
+        5.You have learned the function indexOf. Code your own custom function that will perform the same functionality. You can code for single character as of now. 
+    </p>
+    <label >type word <br> max length 10</label>
+   <input type="text" id="indexOf">
+   <label for="">letter to be searched</label>
+   <input type="text" id="letter" maxlength="1"
+   > <button onclick="index()"> check</button>
+</div>
+
+<div>
+    <p>6.Write a function to delete all vowels from a sentence. Assume that the sentence is not more than 25 characters long.</p>
+    <label id="vowel">write a sentence <br> (25 character long)</label>
+   <input type="text" id="sentence" maxlength="25">
+   <button onclick="vowelremoval()"> result </button>
+</div>
+<div>
+    <p>
+        8. The distance between two cities (in km.) is input through the keyboard. Write four functions to convert and print this distance in meters, feet, inches and centimeters. 
+ 
+
+    </p>
+    <label id="vowel">write distance in km</label>
+   <input type="number" id="distance" maxlength="25">
+<select id="Unit">
+    <option>Unit</option>
+    <option value="centimeter">Centimeter</option>
+    <option value="meter">Meter</option>
+    <option value="feet">feet</option>
+    <option value="inches">inches</option>
+   
+</select>
+   <button onclick="distance()"> Calculate Distance</button>
+   <br>
+   <p id="distanceResult"></p>
+</div>
+ <div>
+<p>
+   9. Write a program to calculate overtime pay of employees. Overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour. 
+</p>
+<Label> input user's total working hour</Label>
+<input type="number" id="salary">
+<button onclick="salary()"> Calculate OverTime salary</button>
+ </div>
+ <div>
+     <p>10. A cashier has currency notes of denominations 10, 50 and 100. If the amount to be withdrawn is input through the keyboard in hundreds, find the total number of currency notes of each denomination the cashier will have to give to the withdrawer. </p>
+     <button onclick="Domination()"> Input amount</button>
+    </div>
+
+
+    <script src="Chapter38-42.js"></script> <br />
+</body>
+
+</html>

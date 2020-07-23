@@ -1,0 +1,35 @@
+div{
+    border: 2px dashed rgb(61, 36, 54);
+    margin: 3px;
+    padding: 6px;
+    /* border-collapse: separate;
+    border-spacing: 15px 50px;
+     */
+}
+
+ 
+.hide{
+  visibility:hidden;
+ 
+  }
+body{
+ background-color: rgb(135, 213, 216);
+ color:white;
+ font-size: large;
+  }
+  button{
+    background-color: rgb(51, 107, 153);
+    color: seashell;
+  }
+  button:hover{
+    background-color:pink
+  }
+  input{
+    background-color: pink;
+  }
+option{
+  background-color: rgb(51, 107, 153);
+    color: seashell;
+    
+}
+
